@@ -11,7 +11,7 @@
 
 ## Installation
 
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 Usage
 1: Run the script for linux: 
@@ -46,5 +46,55 @@ Modifies website content
 
 Attempts credential brute-forcing
 
-Use only on unauthorized systems!
+Technical Notes Security Warnings:
 
+Disables SSL verification (verify=False)
+
+Ignores security warnings (warnings.filterwarnings)
+
+Uses insecure HTTP callbacks to "evil.site"
+
+Evasion Techniques:
+
+Random user-agent rotation
+
+Base64 payload obfuscation
+
+Session persistence
+
+Delayed requests (timeout=5)
+
+Brute-force Credentials Tested:
+
+admin/admin123
+
+root/toor
+
+user/123456
+
+Ethical Considerations
+
+This tool demonstrates:
+
+Importance of form validation
+
+Need for input sanitization
+
+Session cookie security risks
+
+Password policy vulnerabilities
+
+Web spidering dangers
+
+Always obtain written permission before testing any website. Check local laws regarding security research.
+
+8. Suggested Improvements
+Add command-line arguments for target URL
+
+Implement threading for faster scanning
+
+Add proxy support
+
+Include vulnerability reporting feature
+
+-----------------Use only on unauthorized systems!--------------------
